@@ -1,0 +1,8 @@
+# Basic
+alias vi='vim'
+alias realias='source ~/.bash_aliases'
+
+# Git
+alias gs='git status'
+alias gdiff='git diff'
+
