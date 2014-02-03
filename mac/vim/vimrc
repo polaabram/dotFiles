@@ -114,8 +114,8 @@ nmap <silent> <c-l> :wincmd l<CR>
     map <F3> <Esc> :YcmCompleter GoToDefinitionElseDeclaration<CR>
     map <silent> <F4> <ESC>:CtrlP<RETURN>
     call togglebg#map("<F5>")
-    nmap <silent> <F6> <ESC>:/\s\+$<CR>
-    nmap <silent> <F7> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+    nmap <silent> <F7> <ESC>:/\s\+$<CR>
+    nmap <silent> <F8> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 " Keymaps end
     syntax enable                      " enable syntax
     filetype plugin indent on " load filetype plugins/indent settings
