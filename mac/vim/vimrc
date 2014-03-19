@@ -98,6 +98,7 @@
         let g:airline_symbols = {}
     endif
     let g:airline_symbols.branch = '⭠'
+    let g:tagbar_usearrows = 1
 
 "##############################################################################
 "" Easier split navigation
@@ -110,6 +111,7 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 " Keymaps
+    map <silent> <c-o> :TagbarToggle<CR>
     map <silent> <F2> :silent NERDTreeToggle <CR>
     map <F3> <Esc> :YcmCompleter GoToDefinitionElseDeclaration<CR>
     map <silent> <F4> <ESC>:CtrlP<RETURN>
