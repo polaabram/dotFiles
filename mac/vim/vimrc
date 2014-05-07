@@ -60,8 +60,8 @@
     set sts=4
     set sw=4
     set expandtab
-    set textwidth=120
-    set colorcolumn=120
+    set textwidth=80
+    set colorcolumn=80
     set autoindent
     set mouse=a "enable mouse in GUI mode
     set mousehide                 " Hide mouse after chars typed
@@ -90,6 +90,7 @@
     let g:syntastic_style_error_symbol = '⚑'
     let g:syntastic_error_symbol = '✗'
     let g:syntastic_warning_symbol='⚠'
+    let g:syntastic_loc_list_height = 4
 
     let g:powerline_symbols = 'fancy'
     let g:airline_theme = 'solarized'
@@ -99,6 +100,12 @@
     endif
     let g:airline_symbols.branch = '⭠'
     let g:tagbar_usearrows = 1
+    
+    " If you prefer the Omni-Completion tip window to close when a selection is
+    " " made, these lines close it on movement in insert mode or when leaving
+    " " insert mode
+    autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+    autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 "##############################################################################
 "" Easier split navigation
