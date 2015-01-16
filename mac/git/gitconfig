@@ -7,3 +7,5 @@
 
 [push]
     default = tracking
+[core]
+	editor = /usr/local/bin/vim

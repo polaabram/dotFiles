@@ -185,6 +185,6 @@ PS1="\[$Cyan\][\t]\n\[$BGreen\][\u\[$BGreen\]@\[$BYellow\]\h \[$Green\]\w]\[$Cya
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PYTHONPATH=.
-export TERM='xterm-256color'
-
+#export TERM='xterm-256color'
+export TERM='screen-256color'
 source ~/.bash_aliases
