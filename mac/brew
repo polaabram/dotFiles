@@ -1,7 +1,9 @@
 brew-cask
 cmake
 coreutils
+couchpotatoserver
 cscope
+ctags
 curl
 findutils
 fontconfig
@@ -11,6 +13,7 @@ gettext
 git
 gnu-sed
 gnu-tar
+jpeg
 libevent
 libpng
 libyaml
@@ -20,12 +23,13 @@ openssl
 pkg-config
 protobuf
 python
-python3
+python32
 readline
-ruby
+reattach-to-user-namespace
 sqlite
 tig
 tmux
+unrar
 vim
 wget
 xz
