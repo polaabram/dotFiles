@@ -1,0 +1,15 @@
+alias rd="rdesktop -f"
+alias rdwin="rdesktop -f -u Administrator pola-win2008.ps.xiv.ibm.com &"
+alias la="ls -la"
+alias ..="cd .."
+alias count_code_lines='grep -v "^$" `find * | grep "py$" | grep -v __init__` | grep -v "#" | wc -l'
+alias pyc_rm="find . -name '*.pyc' -delete"
+
+### ------------ GIT ------------- ###
+
+alias gs="git status"
+alias gdiff="git diff"
+
+### ----------- TMUX ------------- ###
+alias tmux="tmux -2"
+
