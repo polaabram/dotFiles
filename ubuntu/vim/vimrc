@@ -98,12 +98,13 @@
     highlight SyntasticStyleWarningSign guifg=yellow
 
     let g:powerline_symbols = 'fancy'
-    let g:airline_theme = 'solarized'
+    let g:airline_theme = 'wombat'
 
     if !exists('g:airline_symbols')
         let g:airline_symbols = {}
     endif
     let g:airline_symbols.branch = '⭠'
+    let g:airline_section_b = ''
     let g:tagbar_usearrows = 1
     let g:tagbar_autofocus = 1
 

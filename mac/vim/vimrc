@@ -98,20 +98,24 @@
     highlight SyntasticStyleWarningSign guifg=yellow
 
     let g:powerline_symbols = 'fancy'
-    let g:airline_theme = 'solarized'
+    let g:airline_theme = 'wombat'
 
     if !exists('g:airline_symbols')
         let g:airline_symbols = {}
     endif
     let g:airline_symbols.branch = '⭠'
+    let g:airline_section_b = ''
     let g:tagbar_usearrows = 1
     let g:tagbar_autofocus = 1
-    
+
     " If you prefer the Omni-Completion tip window to close when a selection is
     " " made, these lines close it on movement in insert mode or when leaving
     " " insert mode
     autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+    " YouCompleteMe
+    nnoremap <silent> <F3> :YcmCompleter GoTo<CR>
 
 "##############################################################################
 "" Easier split navigation
