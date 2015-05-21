@@ -31,6 +31,7 @@
             Bundle 'Rykka/colorv.vim'
             Bundle 'flazz/vim-colorschemes'
             Bundle 'terryma/vim-multiple-cursors'
+            Bundle 'tpope/vim-dispatch'
 
     if iCanHazVundle == 0
         echo "Installing Bundles, please ignore key map error messages"
@@ -113,6 +114,9 @@
     " " insert mode
     autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+    " Dispatch
+    autocmd FileType python let b:dispatch = 'nosetests %'
 
     " YouCompleteMe
     nnoremap <silent> <F3> :YcmCompleter GoTo<CR>
