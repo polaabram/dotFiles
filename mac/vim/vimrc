@@ -25,6 +25,7 @@
             Bundle 'SirVer/ultisnips'
             Bundle 'scrooloose/syntastic'
             Bundle 'bling/vim-airline'
+            Bundle 'vim-airline/vim-airline-themes'
             Bundle 'Valloric/YouCompleteMe'
             Bundle 'altercation/vim-colors-solarized'
             Bundle 'mattn/emmet-vim'
