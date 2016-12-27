@@ -171,7 +171,7 @@ On_IBlack='\e[0;100m'   # Black
 On_IRed='\e[0;101m'     # Red
 On_IGreen='\e[0;102m'   # Green
 On_IYellow='\e[0;103m'  # Yellow
-On_IBlue='\e[0;104m'    # Blue
+On_IBlue='\e[0;1m'    # Blue
 On_IPurple='\e[10;95m'  # Purple
 On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
@@ -180,6 +180,11 @@ NORMAL='\e[0m'
 
 source ~/.git-prompt.sh
 PS1="\[$Cyan\][\t]\n\[$BGreen\][\u\[$BGreen\]@\[$BYellow\]\h \[$Green\]\w]\[$Cyan\]\$(__git_ps1)\[$Green\]\$ \[$NORMAL"
+
+# New prompt, to support mercurial branches - https://bitbucket.org/facebook/hg-experimental/src/default/scripts/scm-prompt.sh
+#source $ADMIN_SCRIPTS/scm-prompt
+#PS1="\[$Cyan\][\t]\n\[$BGreen\][\u\[$BGreen\]@\[$BYellow\]\h \[$Green\]\w]\[$Cyan\]\$(_dotfiles_scm_info)\[$Green\]\$ \[$NORMAL"
+
 
 #PS1="\[$IYellow\][\t]\n\[$BGreen\][\u\[$BGreen\]@\[$BYellow\]\h \[$BGreen\]\w]\$ \[$NORMAL"
 
