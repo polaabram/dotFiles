@@ -5,4 +5,4 @@ alias realias='source ~/.bash_aliases'
 # Git
 alias gs='git status'
 alias gdiff='git diff'
-
+alias fixtmux='tmux detach -a'
